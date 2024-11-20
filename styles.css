@@ -1,0 +1,56 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
+}
+
+.page-title-container {
+    background-image: url('https://cdn.wallpapersafari.com/62/87/86DlKO.jpg');
+    height: fit-content;
+    padding: 2vw;
+}
+
+.page-title {
+    background: url('http://scitechdaily.com/images/Hubble-Views-Intermediate-Spiral-Galaxy-NGC-1566.jpg') no-repeat center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10vw;
+}
+
+.sub-title {
+    color: rgb(157, 156, 156);
+    text-align: center;
+    font-family: Helvetica;
+    margin-top: 12vh;
+    font-size: 2.5vw;
+}
+
+@media (max-width: 768px) {
+
+    .page-title-container {
+        height: fit-content;
+        padding: 2vw;
+    }
+
+    .page-title {
+        font-size: 12vw;
+    }
+
+    .sub-title {
+        margin-top: 7vh;
+        font-size: 4vw;
+    }
+
+}
+
