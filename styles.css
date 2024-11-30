@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(24, 24, 24);
 }
 
 .page-title-container {
@@ -25,6 +25,11 @@ body {
     text-align: center;
     font-family: sans-serif;
     font-size: 10vw;
+    transition: font-size .7s ease;
+}
+
+.page-title:hover {
+    font-size: 12vw;
 }
 
 .sub-title {
@@ -58,10 +63,17 @@ body {
     margin-left: 3vw;
 }
 
+.intro-image-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro-image {
     width: 50vw;
     height: 50vh;
-    align-items: center;
     background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2000/09/hubble_space_telescope_hst_courtesy_of_nasa/9229648-5-eng-GB/Hubble_Space_Telescope_HST_courtesy_of_NASA.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,15 +81,16 @@ body {
 }
 
 .thesis {
+
     font-family: sans-serif;
     font-size: 3vw;
     color: rgb(176, 175, 175);
-    margin-left: 2vw;
-    margin-top: 15vh;
+    margin-left: 4vw;
+    margin-top: 10vh;
 }
 
 .benefit-container {
-    margin-top: 15vh;
+    margin-top: 7vh;
     margin-left: 1vw;
 }
 
@@ -92,9 +105,24 @@ body {
 
 .benefit-text {
     font-family: sans-serif;
+    text-indent: 3vw;
     font-size: 2vw;
     margin-top: 2vh;
     margin-left: 5vw;
+}
+
+.benefit-image-container {
+    margin-top: 10vh;
+    display: flex;
+    gap: 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-image {
+    width: 40vw;
+    height: 50vh;
 }
 
 .work-cited-link {
@@ -108,6 +136,12 @@ body {
     width: 20vw;
     height: 4vh;
     margin-bottom: 10vh;
+    transition: width 0.7s ease, height 0.7s ease;
+}
+
+.work-cited-button:hover {
+    width: 25vw;
+    height: 5vh;
 }
 
 @media (max-width: 768px) {
